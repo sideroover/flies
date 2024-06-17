@@ -1,4 +1,4 @@
-package eu.epfc.j1888.fly;
+package eu.epfc.j1888.fly.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

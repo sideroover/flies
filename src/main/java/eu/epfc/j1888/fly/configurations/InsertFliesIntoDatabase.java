@@ -1,5 +1,7 @@
-package eu.epfc.j1888.fly;
+package eu.epfc.j1888.fly.configurations;
 
+import eu.epfc.j1888.fly.entities.Fly;
+import eu.epfc.j1888.fly.repositories.FlyRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
