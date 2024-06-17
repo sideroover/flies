@@ -1,13 +1,13 @@
-package eu.epfc.j1888.gift;
+package eu.epfc.j1888.fly;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GiftApplication {
+public class FlyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GiftApplication.class, args);
+		SpringApplication.run(FlyApplication.class, args);
 	}
 
 }

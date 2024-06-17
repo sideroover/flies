@@ -1,10 +1,10 @@
-package eu.epfc.j1888.gift;
+package eu.epfc.j1888.fly;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GiftApplicationTests {
+class FlyApplicationTests {
 
 	@Test
 	void contextLoads() {
