@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouveau vol</title>
+</head>
+<body>
+<h2>Nouveau Vol</h2>
+<form method="post" action="/flies" th:object="${fly}">
+    <div>
+        <label for="name">Numéro: </label>
+        <input id="name" th:field="*{number}"/>
+    </div>
+    <div>
+        <label for="name">départ: </label>
+        <input id="departureAirport" th:field="*{departureAirport}"/>
+    </div>
+    <div>
+        <label for="name">heure: </label>
+        <input id="departureTime" type="datetime-local" th:field="*{departureTime}"/>
+    </div>
+    <div>
+        <label for="name">arrivée: </label>
+        <input id="arrivalAirport" th:field="*{arrivalAirport}"/>
+    </div>
+    <div>
+        <label for="name">heure: </label>
+        <input id="arrivalTime" type="datetime-local" th:field="*{arrivalTime}"/>
+    </div>
+    <div>
+        <label for="name">companie: </label>
+        <input id="company" th:field="*{company}"/>
+    </div>
+    <div>
+        <label for="name">prix: </label>
+        <input id="price" th:field="*{price}"/>
+    </div>
+    <div>
+        <input type="submit" value="Enregistrer"/>
+    </div>
+</form>
+</body>
+</html>

@@ -28,12 +28,12 @@ public class FlyController {
     public String showFlyForm(Model model){
         Fly fly = new Fly();
         model.addAttribute("fly", fly);
-        return "fly-create-view";
+        return "fly-create";
     }
 
     @PostMapping("/flies")
-    public String createFlyProcessor(@ModelAttribute("fly") Fly fly) {
+    public String createFlyProcessor(@ModelAttribute("flies") Fly fly) {
         repository.save(fly);
-        return "fly-create-success-view";
+        return "redirect:/flies";
     }
 }
